@@ -44,24 +44,21 @@ Introduce the talented individuals who contributed to this project:
 - Challenges Faced During Model Training
 - Enhancing Marketing Strategies
   
-
 # Addressing Missing Values, Duplicates, and Outliers
-## Missing Values:
+## Missing Values
 - Analyzed the dataset to identify columns with missing values.
 - Converted columns "luxury_sales," "fresh_sales," "dry_sales," and "cluster_catgeory" to numeric types, treating invalid values as NaN.
 - Initially dropped rows with missing values to maintain data integrity.
 - Imputed missing values in the test data using mean imputation for "luxury_sales," "fresh_sales," and "dry_sales."
 
-## Duplicates:
+## Duplicates
 - Utilized the drop_duplicates() function to remove exact duplicate rows from the dataset.
 - Inspected the dataset for partial duplicates but found none, ensuring a clean dataset.
 
-## Outliers:
+## Outliers
 - Removed rows with specific "cluster_catgeory" values (e.g., 89.0, 95.0, 98.0, 99.0, 100.0) as potential outliers or erroneous data points.
-
-  
+ 
 # Feature Selection and Relevance
-
 Selected features: "luxury_sales," "fresh_sales," "dry_sales," "outlet_city," and "cluster_category."
 
 ## Rationale
@@ -71,7 +68,7 @@ Selected features: "luxury_sales," "fresh_sales," "dry_sales," "outlet_city," an
 # Feature Scaling and Normalization
 Applied Standard Scaling to features "luxury_sales," "fresh_sales," and "dry_sales" using StandardScaler from sklearn.preprocessing.
 
-## Benefits:
+## Benefits
 - Improves model performance by ensuring equal contribution of features to distance calculations.
 - Prevents bias caused by features with larger ranges.
 - Enhances convergence of optimization algorithms, leading to faster and more efficient training.
@@ -80,7 +77,7 @@ Applied Standard Scaling to features "luxury_sales," "fresh_sales," and "dry_sal
 # Encoding Strategies
 Applied one-hot encoding to the "outlet_city" feature, creating binary columns for each category (e.g., "outlet_city_Batticaloa").
 
-## Impact:
+## Impact
 - Transformed categorical data into a format suitable for machine learning algorithms.
 - Improved model performance by capturing unique characteristics and preferences associated with each category.
 - Enhanced interpretability by providing a clear representation of the categorical variable.
@@ -88,18 +85,17 @@ Applied one-hot encoding to the "outlet_city" feature, creating binary columns f
 # Feature Correlations and Inter-Feature Relationships
 Performed one-hot encoding and standard scaling, indirectly impacting correlations and relationships.
 
-## Target Variable:
+## Target Variable
 - "cluster_category" or "cluster_catgeory" represents different customer segments.
 ## Feature Correlations:
 - One-hot encoding captures the relationship between "outlet_city" and the target variable.
 - Standard scaling ensures proportional contribution of "luxury_sales," "fresh_sales," and "dry_sales" to the analysis.
   
-## Inter-Feature Relationships:
+## Inter-Feature Relationships
 Binary columns created by one-hot encoding are orthogonal, representing independent relationships.
 Numerical features may exhibit underlying relationships, e.g., customers buying more luxury goods may also purchase more fresh items.
 
 # Target Variable Interpretation
-
 The target variable, "cluster_category," defines six distinct customer segments based on purchasing behavior and preferences:
 
 - Cluster 1 ("High-End Shoppers"): Strong preference for luxury items, indicating higher disposable income.
@@ -112,7 +108,7 @@ The target variable, "cluster_category," defines six distinct customer segments 
 # Algorithms Considered and Final Choice
 Considered algorithms: Logistic Regression, Support Vector Machines (SVM) with OneVsRestClassifier and OneVsOneClassifier.
 
-## Final Choice:
+## Final Choice
 - One-vs-Rest (OvR) Logistic Regression: Computational efficiency, simplicity, and fast training times for large datasets.
 - One-vs-One (OvO) SVM: Effectively handles complex decision boundaries and high-dimensional feature spaces.
 
@@ -132,7 +128,8 @@ Based on the classified clusters, KJ Marketing can implement tailored marketing 
 - Balanced Buyers (Cluster 4): Personalized recommendations and loyalty programs.
 - Occasional Luxury Buyers (Cluster 5): Special occasion promotions and lifestyle branding.
 - Value Seekers (Cluster 6): Highlight cost savings and introduce budget-friendly options.
-<a name="conclusion"></a> Conclusion
+  
+# Conclusion
 By addressing missing values, duplicates, and outliers, selecting relevant features, applying appropriate scaling and encoding techniques, and interpreting the target variable, we developed a robust customer segmentation model. The chosen algorithms effectively classified customers into distinct segments. Our solution provides KJ Marketing with actionable insights to enhance their marketing strategies, engage different customer segments, and drive sales growth.
 
 This repository showcases our team's data-driven approach, highlighting the power of analytics in understanding customer behavior and improving marketing effectiveness.
