@@ -37,7 +37,10 @@ Introduce the talented individuals who contributed to this project:
 
 - [Dataset](https://drive.google.com/drive/folders/1Irs3dnKYkMfmnBb2Q2vg3XEZAP1AAcC2?usp=sharing)
 - [Competition](https://datastorm.rotaract.social/)
-- [Team Members' LinkedIn Profiles](#)
+- Team Members' LinkedIn Profiles
+  -- [Imesha Dilshani](https://www.linkedin.com/in/imesha-dilshani-61862422b/)
+  -- [Jayawinath Induwara](https://www.linkedin.com/in/jayawinath-induwara-a31141214/)
+  -- [Nipuni Vithana](https://www.linkedin.com/in/nipuni-vithana/)
 
 This repository stands as a testament to Team RiverBorn's commitment to leveraging analytics for actionable business solutions. We believe that our work exemplifies the power of data-driven decision-making in today's competitive market landscape.
 
