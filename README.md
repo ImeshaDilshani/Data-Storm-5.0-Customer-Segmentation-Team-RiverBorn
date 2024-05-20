@@ -101,7 +101,7 @@ Applied one-hot encoding to the "outlet_city" feature, creating binary columns f
 Performed one-hot encoding and standard scaling, indirectly impacting correlations and relationships.
 
 ### Target Variable
-- "cluster_category" or "cluster_catgeory" represents different customer segments.
+- "cluster_category" represents different customer segments.
 ### Feature Correlations
 - One-hot encoding captures the relationship between "outlet_city" and the target variable.
 - Standard scaling ensures proportional contribution of "luxury_sales," "fresh_sales," and "dry_sales" to the analysis.
